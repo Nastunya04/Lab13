@@ -5,8 +5,8 @@ import lombok.SneakyThrows;
 public class Main {
     @SneakyThrows
     public static void main(String[] args) {
-        PDLReader pdl = new PDLReader();
-        Company comp = pdl.parse("https://github.com/Nastunya04/Lab13");
-        System.out.println(comp);
+        PDLReader pdlread = new PDLReader();
+        Company data = pdlread.parse("https://github.com/Nastunya04/Lab13");
+        System.out.println(data);
     }
 }
